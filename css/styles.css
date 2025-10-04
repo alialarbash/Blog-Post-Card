@@ -55,10 +55,13 @@ Medium: 11px
 */
 
 @font-face {
-  font-family: "FigtreeFigtreeExtraBold";
-  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
   font-family: "Figtree";
   src: url("../assets/fonts/static/Figtree-Medium.ttf");
+}
+
+@font-face {
+  font-family: "FigtreeFigtreeExtraBold";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf");
 }
 
 .attribution {
@@ -83,15 +86,76 @@ html {
 body {
   background-color: rgba(244, 208, 78, 1);
   color: rgba(18, 18, 18, 1);
-  font-family: "Figtree", sans-serif;
+  font-family: "FigtreeFigtreeExtraBold", sans-serif;
 }
 
 .blog-card {
   background-color: #fff;
-  height: 10rem;
+  width: 34rem;
+  height: auto;
+  margin: 15vh auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(18, 18, 18, 1);
+  box-shadow: 0.8rem 0.8rem 0 rgba(18, 18, 18, 1);
 }
 
 .card-img {
-  width: 50%;
+  width: 100%;
   height: auto;
+  border-radius: 9px;
+  margin-bottom: 2rem;
+}
+
+.tag {
+  font-size: 1.2rem;
+  background-color: rgba(244, 208, 78, 1);
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  margin-bottom: 1.2rem;
+}
+
+.published-date {
+  font-family: "Figtree";
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.title-link:link,
+.title-link:visited {
+  display: block;
+  color: rgba(18, 18, 18, 1);
+  text-decoration: none;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
+}
+.title-link:hover,
+.title-link:active {
+  color: rgba(244, 208, 78, 1);
+}
+
+.card-description {
+  color: rgba(107, 107, 107, 1);
+  font-family: "Figtree";
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.publisher-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.publisher-img {
+  width: 2.4rem;
+  height: auto;
+}
+
+.publisher-name {
+  font-size: 1.2rem;
 }
